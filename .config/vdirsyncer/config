@@ -1,0 +1,38 @@
+[general]
+status_path = "~/.config/vdirsyncer/status/"
+
+
+[pair my_contacts]
+a = "local_contacts"
+b = "remote_contacts"
+collections = ["from a", "from b"]
+
+[storage local_contacts]
+type = "filesystem"
+path = "~/.contacts/"
+fileext = ".vcf"
+
+[storage remote_contacts]
+type = "carddav"
+url = "https://cloud.disroot.org"
+username = "alhassanaraouf"
+password.fetch = ["command", "~/scripts/get-pass.sh", "email/alhassanaraouf@disroot.org"]
+
+
+[pair my_calendars]
+a = "local_calendars"
+b = "remote_calendars"
+collections = ["from a", "from b"]
+metadata = ["color"]
+
+[storage local_calendars]
+type = "filesystem"
+path = "~/.calendars/"
+fileext = ".ics"
+
+
+[storage remote_calendars]
+type = "caldav"
+url = "https://cloud.disroot.org"
+username = "alhassanaraouf"
+password.fetch = ["command", "~/scripts/get-pass.sh", "email/alhassanaraouf@disroot.org"]
