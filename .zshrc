@@ -17,7 +17,7 @@ prompt walters
 export EDITOR=vis
 export VISUAL=$EDITOR
 export BROWSER=lynx
-
+export TERM=xterm
 
 
 
