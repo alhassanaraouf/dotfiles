@@ -8,3 +8,6 @@ ncmpcpp_directory = "~/.config/ncmpcpp"
 lyrics_directory = "~/.config/ncmpcpp/lyrics"
 mpd_music_dir = "/mnt/My Data/Media/Music"
 
+
+# Server specifics
+mpd_host = "~/.config/mpd/socket"
