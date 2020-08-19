@@ -18,11 +18,18 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
+
+
+
+-- This is used later as the default terminal and editor to run.
+terminal = os.getenv("TERM")
+editor = os.getenv("EDITOR") or "nano"
+editor_cmd = terminal .. " -e " .. editor
+
+
 -- require *after* `beautiful.init` or the theme will be inconsistent!
 local pulse = require("pulseaudio_widget")
-
--- Optionally, change the notification timeout default of 1 second to 5.
--- pulse.notification_timeout_seconds = 5
+pulse.mixer = terminal .. " pulsemixer"
 
 
 local power = require("power_widget")
@@ -52,7 +59,7 @@ cpu_config = {
 	    width = 70,
 	    step_width = 2,
 	    step_spacing = 0,
-	   color = '#434c5e'
+	    color = '#434c5e'
 		}
 
 
@@ -63,9 +70,6 @@ brightness_config = {
 	          inc_brightness_cmd = 'xbacklight -inc 5',
 	          dec_brightness_cmd = 'xbacklight -dec 5'
 	              }
-
-
-
 
 
 local keyboard_layout = require("keyboard_layout")
@@ -122,10 +126,6 @@ end
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
--- This is used later as the default terminal and editor to run.
-terminal = os.getenv("TERM")
-editor = os.getenv("EDITOR") or "nano"
-editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
