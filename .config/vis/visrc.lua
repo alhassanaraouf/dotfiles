@@ -1,6 +1,9 @@
 -- load standard vis module, providing parts of the Lua API
 require('vis')
 require("plugins/vis-commentary/vis-commentary")
+require("plugins/vis-ctags/ctags")
+require("plugins/vis-surround")
+require("plugins/vis-pairs")
 
 vis.events.subscribe(vis.events.INIT, function()
 	-- Your global configuration options
