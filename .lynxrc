@@ -1,0 +1,14 @@
+# file_editor specifies the editor to be invoked when editing local files
+# or sending mail.  If no editor is specified, then file editing is disabled
+# unless it is activated from the command line, and the built-in line editor
+# will be used for sending mail.
+file_editor=vis
+
+# If vi_keys is set to "on", then the normal VI movement keys:
+#   j = down    k = up
+#   h = left    l = right
+# will be enabled.  These keys are only lower case.
+# Capital 'H', 'J' and 'K will still activate help, jump shortcuts,
+# and the keymap display, respectively.
+vi_keys=on
+
