@@ -1,0 +1,4 @@
+[nncli]
+cfg_nn_host = cloud.disroot.org
+cfg_nn_username = alhassanaraouf
+cfg_nn_password_eval = ~/scripts/get-pass.sh web/cloud.disroot.org

@@ -10,4 +10,4 @@ mpd_music_dir = "/mnt/My Data/Media/Music"
 
 
 # Server specifics
-mpd_host = "~/.config/mpd/socket"
+# mpd_host = "~/.config/mpd/socket"

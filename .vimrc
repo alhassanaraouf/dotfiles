@@ -6,9 +6,3 @@ set ignorecase
 set smartcase
 set hlsearch
 
-
-
-call plug#begin()
-
-
-call plug#end()
