@@ -8,5 +8,5 @@ export BROWSER=lynx
 export TERM=xterm
 
 
-export LYNX_CFG=~/.lynx.cfg
+export LYNX_CFG=~/.config/lynx/lynx.cfg
 
