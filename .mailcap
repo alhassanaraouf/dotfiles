@@ -1,5 +1,5 @@
 # Image
-image/*; sxkiv %s
+image/*; sxiv %s
 
 
 # Audio
