@@ -1,1 +1,19 @@
+# Image
+image/*; sxkiv %s
+
+
+# Audio
+audio/*; mpv %s
+
+
+
+# Video
+video/*; mpv %s
+
+# PDF
+application/pdf; zathura %s 
+
+
+# HTML
 text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -collapse_br_tags -dump %s; nametemplate=%s.html; copiousoutput
+
