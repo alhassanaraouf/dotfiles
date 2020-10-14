@@ -2,7 +2,7 @@ urls-source "ocnews"
 ocnews-url "https://cloud.disroot.org"
 
 ocnews-login "alhassanaraouf"
-ocnews-passwordeval "pass web/cloud.disroot.org"
+ocnews-passwordeval "~/scripts/get-pass.sh web/cloud.disroot.org"
 
 ocnews-flag-star "s"
 

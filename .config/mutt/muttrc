@@ -1,7 +1,7 @@
 set folder = imaps://disroot.org
 set my_name = "Al-Hassan Abdel-Raouf"
 set imap_user = alhassanaraouf
-set imap_pass=`pass email/alhassanaraouf@disroot.org | head -n 1`
+set imap_pass=`~/scripts/get-pass.sh email/alhassanaraouf@disroot.org`
 set spoolfile   = +INBOX
 mailboxes       = +INBOX
 
