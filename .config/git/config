@@ -1,3 +1,11 @@
 [user]
 	name = Al-Hassan Abdel-Raouf
 	email = alhassanaraouf@disroot.org
+
+
+
+[sendemail]
+	smtpserver = disroot.org
+	smtpuser = alhassanaraouf@disroot.org
+	smtpencryption = tls
+	smtpserverport = 587
