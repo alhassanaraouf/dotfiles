@@ -1,12 +1,24 @@
 [submodule ".config/vis/plugins/vis-ctags"]
 	path = .config/vis/plugins/vis-ctags
-	url = https://github.com/kupospelov/vis-ctags
+	url = https://github.com/kupospelov/vis-ctags.git
 [submodule ".config/vis/plugins/vis-commentary"]
 	path = .config/vis/plugins/vis-commentary
-	url = https://github.com/lutobler/vis-commentary
+	url = https://github.com/lutobler/vis-commentary.git
 [submodule ".config/vis/plugins/vis-pairs"]
 	path = .config/vis/plugins/vis-pairs
 	url = https://repo.or.cz/vis-pairs.git
 [submodule ".config/vis/plugins/vis-surround"]
 	path = .config/vis/plugins/vis-surround
 	url = https://repo.or.cz/vis-surround.git
+[submodule ".config/awesome/awesome-wm-widgets"]
+	path = .config/awesome/awesome-wm-widgets
+	url = https://github.com/streetturtle/awesome-wm-widgets.git
+[submodule ".config/awesome/awesomewm-screenshot"]
+	path = .config/awesome/awesomewm-screenshot
+	url = https://github.com/alhassanaraouf/awesomewm-screenshot.git
+[submodule ".config/awesome/keyboard_layout"]
+	path = .config/awesome/keyboard_layout
+	url = https://github.com/echuraev/keyboard_layout.git
+[submodule ".config/awesome/net_widgets"]
+	path = .config/awesome/net_widgets
+	url = https://github.com/pltanton/net_widgets.git
