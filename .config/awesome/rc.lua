@@ -27,33 +27,12 @@ editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
 
--- require *after* `beautiful.init` or the theme will be inconsistent!
-local pulse = require("pulseaudio_widget")
-pulse.mixer = terminal .. " pulsemixer"
+
+local volume require("plugins.awesome-volume.volume")
 
 
-local power = require("power_widget")
 
-power.warning_config = {
-  percentage = 15,
-  message = "The battery is getting low",
-  preset = {
-    shape = gears.shape.rounded_rect,
-    timeout = 12,
-    bg = "#FFFF00",
-    fg = "#000000",
-  },
-}
-
-power.critical_percentage = 15
-
-
--- require *after* `beautiful.init` or the theme will be inconsistent!
---local connman = require("connman_widget")
--- set the GUI client.
--- connman.gui_client = "wicd"
-
-local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
+local cpu_widget = require("plugins.awesome-wm-widgets.cpu-widget.cpu-widget")
 
 cpu_config = {
 	    width = 70,
@@ -63,7 +42,7 @@ cpu_config = {
 		}
 
 
-local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
+local brightness_widget = require("plugins.awesome-wm-widgets.brightness-widget.brightness")
 
 brightness_config = {
 	          get_brightness_cmd = 'xbacklight -get',
@@ -72,9 +51,9 @@ brightness_config = {
 	              }
 
 
-local keyboard_layout = require("keyboard_layout")
+local keyboard_layout = require("plugins.keyboard_layout.kbdcfg")
 
-local kbdcfg = keyboard_layout.kbdcfg({type = "tui"})
+local kbdcfg = keyboard_layout({type = "tui"})
 
 kbdcfg.add_primary_layout("English", "EN", "us")
 kbdcfg.add_primary_layout("Arabic", "AR", "ar")
@@ -87,14 +66,8 @@ kbdcfg.widget:buttons(
 )
 
 
-local screenshot = require("awesomewm-screenshot")
+local screenshot = require("plugins.awesomewm-screenshot.screenshot")
 
-
---local net_widgets = require("net_widgets")
---net_wireless = net_widgets.wireless({
---	interface="wlp6s0",
---	font="mono"
---		})
 
 
 -- {{{ Error handling
@@ -291,13 +264,10 @@ awful.screen.connect_for_each_screen(function(s)
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
-	    pulse,
-	    power,
+	    volume_widget,
 	    brightness_widget(brightness_config),
 	    cpu_widget(cpu_config), 
-	   -- net_wireless,
             layout = wibox.layout.fixed.horizontal,
-	  -- mykeyboardlayout,
 	    kbdcfg.widget,
             wibox.widget.systray(),
             mytextclock,
@@ -332,16 +302,22 @@ awful.key({ }, "Print", scrot_full,
     awful.key({"Shift"}, "Alt_L", function () kbdcfg.switch_next() end),
     awful.key({"Mod4"}, "l", function () awful.spawn("xscreensaver-command -lock") end, {description = "Lock Screen", group = "custom"}),
 
+
+
+
 awful.util.table.join(
   -- Audio
-   awful.key({ }, "XF86AudioRaiseVolume", pulse.volume_up, {description = "increase sound Volume", group = "custom"}),
-   awful.key({ }, "XF86AudioLowerVolume", pulse.volume_down, {description = "decrease sound Volume", group = "custom"}),
-   awful.key({ }, "XF86AudioMute",  pulse.toggle_muted, {description = "mute sound volume", group = "custom"}),
-   -- Microphone
-   awful.key({"Shift"}, "XF86AudioRaiseVolume", pulse.volume_up_mic, {description = "increase mic volume", group = "custom"}),
-   awful.key({"Shift"}, "XF86AudioLowerVolume", pulse.volume_down_mic, {description = "decrease mic volume", group = "custom"}),
-   awful.key({"Shift"}, "XF86AudioMute",  pulse.toggle_muted_mic, {description = "mute mic volume", group = "custom"})
+   awful.key({ }, "XF86AudioRaiseVolume", volume_up, {description = "increase sound Volume", group = "custom"}),
+   awful.key({ }, "XF86AudioLowerVolume", volume_down, {description = "decrease sound Volume", group = "custom"}),
+   awful.key({ }, "XF86AudioMute",  volume_mute, {description = "mute sound volume", group = "custom"})
+   -- -- Microphone
+   -- awful.key({"Shift"}, "XF86AudioRaiseVolume", pulse.volume_up_mic, {description = "increase mic volume", group = "custom"}),
+   -- awful.key({"Shift"}, "XF86AudioLowerVolume", pulse.volume_down_mic, {description = "decrease mic volume", group = "custom"}),
+   -- awful.key({"Shift"}, "XF86AudioMute",  pulse.toggle_muted_mic, {description = "mute mic volume", group = "custom"})
          ),
+
+
+
 
 awful.key({}, "XF86MonBrightnessUp", function () awful.spawn("xbacklight -inc 5") end, {description = "increase brightness", group = "custom"}),
 awful.key({}, "XF86MonBrightnessDown", function () awful.spawn("xbacklight -dec 5") end, {description = "decrease brightness", group = "custom"}),

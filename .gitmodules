@@ -10,15 +10,15 @@
 [submodule ".config/vis/plugins/vis-surround"]
 	path = .config/vis/plugins/vis-surround
 	url = https://repo.or.cz/vis-surround.git
-[submodule ".config/awesome/awesome-wm-widgets"]
-	path = .config/awesome/awesome-wm-widgets
+[submodule ".config/awesome/plugins/awesome-wm-widgets"]
+	path = .config/awesome/plugins/awesome-wm-widgets
 	url = https://github.com/streetturtle/awesome-wm-widgets.git
-[submodule ".config/awesome/awesomewm-screenshot"]
-	path = .config/awesome/awesomewm-screenshot
-	url = https://github.com/alhassanaraouf/awesomewm-screenshot.git
-[submodule ".config/awesome/keyboard_layout"]
-	path = .config/awesome/keyboard_layout
+[submodule ".config/awesome/plugins/awesomewm-screenshot"]
+	path = .config/awesome//plugins/awesomewm-screenshot
+	url = https://github.com/denisoster/awesomewm-screenshot.git
+[submodule ".config/awesome/plugins/keyboard_layout"]
+	path = .config/awesome/plugins/keyboard_layout
 	url = https://github.com/echuraev/keyboard_layout.git
-[submodule ".config/awesome/net_widgets"]
-	path = .config/awesome/net_widgets
-	url = https://github.com/pltanton/net_widgets.git
+[submodule ".config/awesome/plugins/awesome-volume"]
+	path = .config/awesome/plugins/awesome-volume
+	url = https://github.com/alhassanaraouf/awesome-volume
