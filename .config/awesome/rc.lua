@@ -265,7 +265,7 @@ awful.screen.connect_for_each_screen(function(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
 	    volume_widget,
-	    brightness_widget(brightness_config),
+	    -- brightness_widget(brightness_config),
 	    cpu_widget(cpu_config), 
             layout = wibox.layout.fixed.horizontal,
 	    kbdcfg.widget,
