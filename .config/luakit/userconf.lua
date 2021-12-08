@@ -1,4 +1,5 @@
 require "noscript"
+require "plugins/tabgroups"
 local settings = require "settings"
 local engines = settings.window.search_engines
 
