@@ -14,11 +14,11 @@
 	path = .config/awesome/plugins/awesome-wm-widgets
 	url = https://github.com/streetturtle/awesome-wm-widgets.git
 [submodule ".config/awesome/plugins/awesomewm-screenshot"]
-	path = .config/awesome//plugins/awesomewm-screenshot
+	path = .config/awesome/plugins/awesomewm-screenshot
 	url = https://github.com/denisoster/awesomewm-screenshot.git
 [submodule ".config/awesome/plugins/keyboard_layout"]
 	path = .config/awesome/plugins/keyboard_layout
 	url = https://github.com/echuraev/keyboard_layout.git
 [submodule ".config/awesome/plugins/awesome-volume"]
 	path = .config/awesome/plugins/awesome-volume
-	url = https://github.com/alhassanaraouf/awesome-volume
+	url = https://github.com/alhassanaraouf/awesome-volume.git
