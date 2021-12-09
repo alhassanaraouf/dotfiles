@@ -50,4 +50,7 @@ fi
 #	command -v "$p" >/dev/null && exec "$p"
 #done
 
+
+xscreensaver -no-splash &
+xss-lock -- xscreensaver-command -lock &
 exec awesome
