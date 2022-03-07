@@ -2,7 +2,9 @@
 require "noscript"
 
 -- Loading Tabgroups Plugin
-require "plugins/tabgroups"
+require "tabgroups"
+-- require "uaswitch"
+require "pass"
 
 -- Setup My Search Engine
 local settings = require "settings"
@@ -12,4 +14,4 @@ engines.default = engines.disroot
 
 -- Setup My Editor
 local editor = require "editor"
-editor.editor_cmd = "xterm -e vis {file}"
+editor.editor_cmd = "xfce4-terminal -x vis {file}"

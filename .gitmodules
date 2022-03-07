@@ -22,3 +22,6 @@
 [submodule ".config/awesome/plugins/awesome-volume"]
 	path = .config/awesome/plugins/awesome-volume
 	url = https://github.com/alhassanaraouf/awesome-volume.git
+[submodule ".config/luakit/plugins/luakit-pass"]
+	path = .config/luakit/pass
+	url = https://github.com/arcnmx/luakit-pass.git

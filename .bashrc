@@ -14,7 +14,7 @@ export EMAIL="alhassanaraouf@disroot.org"
 export VISUAL=vis
 export EDITOR=$VISUAL
 export BROWSER=lynx
-#export TERM=xterm
+export TERM=xfce4-terminal
 
 
 export LYNX_CFG=~/.config/lynx/lynx.cfg
@@ -29,3 +29,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 PATH=~/.config/composer/vendor/bin/:$HOME/scripts:$PATH
+
+
+export FLYCTL_INSTALL="/home/alhassan/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
