@@ -9,7 +9,7 @@ setopt autocd beep extendedglob nomatch notify
 
 
 # vi Mode
-bindkey -v
+# bindkey -v
 
 
 # End of lines configured by zsh-newuser-install
