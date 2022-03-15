@@ -1,10 +1,13 @@
-urls-source "ocnews"
-ocnews-url "https://cloud.disroot.org"
+urls-source "ttrss"
+ttrss-url "https://tt-rss.nixnet.services"
 
-ocnews-login "alhassanaraouf"
-ocnews-passwordeval "~/scripts/get-pass.sh web/cloud.disroot.org"
+ttrss-login "alhassanaraouf"
+ttrss-passwordeval "~/scripts/get-pass.sh web/tt-rss.nixnet.xyz"
 
-ocnews-flag-star "s"
+ttrss-flag-star "s"
+ttrss-flag-publish "p"
 
 download-path "~/Downloads/Podcasts"
-player "mpv"
+player "parole"
+
+reload-threads 4
