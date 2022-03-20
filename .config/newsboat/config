@@ -8,6 +8,6 @@ ttrss-flag-star "s"
 ttrss-flag-publish "p"
 
 download-path "~/Downloads/Podcasts"
-player "parole"
+player "mpv"
 
 reload-threads 4
