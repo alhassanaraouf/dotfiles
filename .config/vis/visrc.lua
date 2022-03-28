@@ -4,6 +4,8 @@ require("plugins/vis-commentary")
 require("plugins/vis-ctags")
 require("plugins/vis-surround")
 require("plugins/vis-pairs")
+require("plugins/vis-editorconfig")
+
 
 vis.events.subscribe(vis.events.INIT, function()
 	-- Your global configuration options
