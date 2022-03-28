@@ -28,3 +28,6 @@
 [submodule ".config/vis/plugins/vis-editorconfig"]
 	path = .config/vis/plugins/vis-editorconfig
 	url = https://github.com/seifferth/vis-editorconfig
+[submodule ".config/vis/plugins/vis-title"]
+	path = .config/vis/plugins/vis-title
+	url = https://github.com/erf/vis-title

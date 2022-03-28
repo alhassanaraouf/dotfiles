@@ -5,6 +5,7 @@ require("plugins/vis-ctags")
 require("plugins/vis-surround")
 require("plugins/vis-pairs")
 require("plugins/vis-editorconfig")
+require("plugins/vis-title")
 
 
 vis.events.subscribe(vis.events.INIT, function()
