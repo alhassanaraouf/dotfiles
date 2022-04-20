@@ -1,7 +1,6 @@
 # Created by newuser for 5.8.1
 
 
-
 # ZI Plugin Manager Setup
 
 export ZI_HOME=${HOME}/.config/zsh/zi
@@ -30,12 +29,13 @@ zicompinit # <- https://z-shell.pages.dev/docs/gallery/collection#minimal
 
 zi load z-shell/zui
 zi load z-shell/zbrowse
-zi load z-shell/zi-console
+# zi load z-shell/zi-console
+zi wait lucid for z-shell/zi-console
 zi load z-shell/zsh-cmd-architect
 zi load z-shell/zsh-navigation-tools
-zi load z-shell/zzcomplete
+zi light z-shell/zzcomplete
 zi load z-shell/H-S-MW
-zi light z-shell/fast-syntax-highlighting
+zi light z-shell/F-Sy-H
 
 zi load mattmc3/omz-themes-standalone
 # zi load ohmyzsh/ohmyzsh

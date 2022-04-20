@@ -13,10 +13,6 @@ export LYNX_CFG=~/.config/lynx/lynx.cfg
 export FLYCTL_INSTALL="${HOME}/.config/fly"
 
 
-# sonarqube
-export SONAR_SCANNER_HOME="/opt/sonar-scanner"
-
-
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
