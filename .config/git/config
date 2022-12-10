@@ -1,14 +1,8 @@
 [user]
 	name = Al-Hassan Abdel-Raouf
-	email = alhassanaraouf@disroot.org
+	email = alhassanaraouf@alhassanaraouf.me
 
 
-
-[sendemail]
-	smtpserver = disroot.org
-	smtpuser = alhassanaraouf@disroot.org
-	smtpencryption = tls
-	smtpserverport = 587
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
