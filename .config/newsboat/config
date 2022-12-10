@@ -9,5 +9,6 @@ ttrss-flag-publish "p"
 
 download-path "~/Downloads/Podcasts"
 player "mpv"
+browser "xdg-open %u"
 
 reload-threads 4

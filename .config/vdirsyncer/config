@@ -14,9 +14,9 @@ fileext = ".vcf"
 
 [storage remote_contacts]
 type = "carddav"
-url = "https://cloud.disroot.org"
+url = "https://cloud.tilde.team"
 username = "alhassanaraouf"
-password.fetch = ["command", "~/scripts/get-pass.sh", "email/alhassanaraouf@disroot.org"]
+password.fetch = ["command", "~/scripts/get-pass.sh", "email/alhassanaraouf@tilde.team"]
 
 
 [pair my_calendars]
@@ -33,6 +33,6 @@ fileext = ".ics"
 
 [storage remote_calendars]
 type = "caldav"
-url = "https://cloud.disroot.org"
+url = "https://cloud.tilde.team"
 username = "alhassanaraouf"
-password.fetch = ["command", "~/scripts/get-pass.sh", "email/alhassanaraouf@disroot.org"]
+password.fetch = ["command", "~/scripts/get-pass.sh", "email/alhassanaraouf@tilde.team"]

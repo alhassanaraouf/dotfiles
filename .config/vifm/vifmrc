@@ -7,11 +7,13 @@
 
 " ------------------------------------------------------------------------------
 
+plugin load
+
 " Command used to edit files in various contexts.  The default is vim.
 " If you would like to use another vi clone such as Elvis or Vile
 " you will need to change this setting.
 
-set vicmd=vis
+set vicmd=nvim
 " set vicmd=elvis\ -G\ termcap
 " set vicmd=vile
 
@@ -240,14 +242,14 @@ filetype *.[1-8] man ./%c
 fileviewer *.[1-8] man ./%c | col -b
 
 " Images
-filextype *.bmp,*.jpg,*.jpeg,*.png,*.xpm,*.svg
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.xpm,*.svg,*.webp
         \ {View in imv}
         \ imv %f,
         \ {View in gpicview}
         \ gpicview %c,
         \ {View in shotwell}
         \ shotwell,
-fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm,*.svg
+fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm,*.svg,*.webp
          \ identify -verbose %f
 
 " GIF(Animations)
@@ -406,6 +408,8 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 "
 " set viewcolumns=-{name}..,6{}.
 
+set viewcolumns=-{NameLink},8.7{}
+
 " Filter-out build and temporary files
 "
 " filter! /^.*\.(lo|o|d|class|py[co])$|.*~$/
@@ -458,7 +462,7 @@ nnoremap cc cw<c-u>
 nnoremap A cw
 
 " Open console in current directory
-nnoremap ,t :!xterm &<cr>
+nnoremap ,t :!tym &<cr>
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
 nnoremap ,c :write | edit $MYVIFMRC | restart<cr>
