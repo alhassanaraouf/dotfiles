@@ -1,8 +1,8 @@
 urls-source "ttrss"
-ttrss-url "https://tt-rss.nixnet.services"
+ttrss-url "https://rss.tildeverse.org"
 
 ttrss-login "alhassanaraouf"
-ttrss-passwordeval "~/scripts/get-pass.sh web/tt-rss.nixnet.xyz"
+ttrss-passwordeval "~/scripts/get-pass.sh temp/rss.tildeverse.org-Newsboat"
 
 ttrss-flag-star "s"
 ttrss-flag-publish "p"
