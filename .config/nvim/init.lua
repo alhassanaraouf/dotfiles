@@ -58,7 +58,7 @@ require("zk").setup()
 
 require "LSP"
 require "DAP"
--- require "treesitter"
+require "treesitter"
 require "formatting"
 require "linting"
 

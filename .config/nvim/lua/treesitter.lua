@@ -5,7 +5,7 @@ ts.setup({
 	ensure_installed = "all",
 	highlight = {
 		enable = true,
-		additional_vim_regex_highlighting = false,
+		-- additional_vim_regex_highlighting = false,
 	},
 	indent = { enable = true },
 	query_linter = {
@@ -14,3 +14,4 @@ ts.setup({
 		lint_events = { "BufWrite", "CursorHold" },
 	},
 })
+
