@@ -42,3 +42,5 @@ fpath+=( /home/alhassan/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLA
 zsh-defer source /home/alhassan/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-zdharma-continuum-SLASH-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 fpath+=( /home/alhassan/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-history-substring-search )
 source /home/alhassan/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-history-substring-search/zsh-history-substring-search.plugin.zsh
+fpath+=( /home/alhassan/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-ianthehenry-SLASH-sd )
+source /home/alhassan/.cache/antidote/https-COLON--SLASH--SLASH-github.com-SLASH-ianthehenry-SLASH-sd/sd.plugin.zsh
