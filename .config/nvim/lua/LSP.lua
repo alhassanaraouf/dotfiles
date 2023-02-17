@@ -1,8 +1,8 @@
 require("mason-lspconfig").setup({
-	ensure_installed = { "psalm", "terraformls", "sumneko_lua" },
+	ensure_installed = { "psalm", "terraformls", "lua_ls" },
 	automatic_installation = true,
 })
-require("lspconfig")["sumneko_lua"].setup({
+require("lspconfig")["lua_ls"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 })
