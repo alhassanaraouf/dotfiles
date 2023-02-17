@@ -16,7 +16,7 @@ fileext = ".vcf"
 type = "carddav"
 url = "https://cloud.disroot.org"
 username = "alhassanaraouf"
-password.fetch = ["command", "~/scripts/get-pass.sh", "email/alhassanaraouf@disroot.org"]
+password.fetch = ["command", "~/sd/get-pass.sh", "email/alhassanaraouf@disroot.org"]
 
 
 [pair my_calendars]
@@ -35,4 +35,4 @@ fileext = ".ics"
 type = "caldav"
 url = "https://cloud.disroot.org"
 username = "alhassanaraouf"
-password.fetch = ["command", "~/scripts/get-pass.sh", "email/alhassanaraouf@disroot.org"]
+password.fetch = ["command", "~/sd/get-pass.sh", "email/alhassanaraouf@disroot.org"]
