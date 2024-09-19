@@ -11,11 +11,6 @@ require("lspconfig")["lua_ls"].setup({
 	flags = lsp_flags,
 	capabilities = capabilities,
 })
-require("lspconfig")["psalm"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-	capabilities = capabilities,
-})
 require("lspconfig")["terraformls"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
