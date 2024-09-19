@@ -10,3 +10,7 @@
 	process = git-lfs filter-process
 [init]
 	defaultBranch = master
+
+
+[includeIf "gitdir:~/Projects/ITWorx/"]
+    path = ~/.config/git/ITWorx.config
