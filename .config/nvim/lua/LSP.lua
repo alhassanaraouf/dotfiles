@@ -2,7 +2,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 
 require("mason-lspconfig").setup({
-	ensure_installed = { "psalm", "terraformls", "lua_ls" },
+	ensure_installed = { "terraformls", "lua_ls" },
 	automatic_installation = true,
 	capabilities = capabilities,
 })
